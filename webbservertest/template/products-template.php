@@ -11,6 +11,7 @@
     <?php
         require "masthead.php";
         require "menu.php";
+		require "../html/varor.php";
         ?>
 		
 		<main> <!--Huvudinnehåll-->
@@ -27,7 +28,31 @@
 						</tr>
 					</thead>
 					<tbody>
+						<?php
+						foreach($varor as $vara){
+							echo "<tr><td>";
+							echo $vara[0];
+							echo "</td><td>";
+							echo $vara[1];
+							echo"</td><td>";
+							echo "<img src='{$vara[3]}' alt='{$vara[1]}'>";
+							echo "</td><td>";
+							echo $vara[2];
+							echo "</td></tr>";
+						}
+						?>
+
+						echo<<<TABLE 
 						<tr>
+							<td>{$vara[0]}</td>
+							<td>{$vara[1]}</td>
+							<td><img src="{$vara[3]}" alt="
+							<td>{$vara[2]}</td>
+							<td><a href="#">köp</a></td>
+
+					</tr>
+
+						<!--<tr>
 							<td>Äpple</td>
 							<td>Grönt surt</td>
 							<td><img src="bilder/apple.jpg" alt="Grönt surt"></td>
@@ -54,7 +79,7 @@
 							<td><img src="bilder/banana.jpg" alt="Gul böjd"></td>
 							<td>30</td>
 							<td><a href="#">Köp</a></td>
-						</tr>
+						</tr>-->
 					</tbody>
 				</table>
 
