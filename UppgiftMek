@@ -1,0 +1,38 @@
+$webbpage1 = new StdClass();
+$webbpage1->name = "korv";
+$webbpage1->url = "http://php.net/";
+$webbpage1->rank = 5; 
+
+/** 
+ *om man skriver korv här?
+ */
+class webbpage
+{
+    /**
+    *Webbsidan heter korv
+    *@var $name string 
+    */
+    
+    public $name;
+
+    /**
+    *Adressen till hemsida
+    *var @url string  
+    */
+    public @url;
+
+    /**
+    *Rankning av Webbsidan
+    *@var $rank int
+    */
+    public $rank;
+
+    public function __construct($name, $url, $rank)
+{
+    $this->name = $name;
+    $this->url = $url;
+    $this->rank = $rank;
+
+}
+
+}
