@@ -7,3 +7,15 @@
     array("Grapefrukt","Konstig", "300","bilder/bonker.jpg"),
   );
 
+// While($row=$result->fetch_assoc()){
+ // echo "<tr><td>";
+//  echo "</td><td>";
+ // echo $row['description'];
+//  echo "</td><td>";
+ // echo "<'img src'";
+ // echo $row['picture'];
+ // echo "'></td><td>";
+//  echo $row['price'];
+ // echo "</td></tr>";
+ 
+}

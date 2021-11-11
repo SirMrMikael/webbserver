@@ -13,7 +13,8 @@ $sql = "SELECT * FROM products";
 $result = $dhb->prepare($sql);
 $result->execute();
 
-$result = $result->get_result();
+$result = $res->get_result();
+$dbh->close();
 
 //var_dump($result);
 echo "<table><tr>";

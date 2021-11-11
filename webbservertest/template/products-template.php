@@ -40,9 +40,19 @@
 							echo $vara[2];
 							echo "</td></tr>";
 						}
-						?>
-
-						echo<<<TABLE 
+						?> 
+						While($row=$result->fetch_assoc()){
+							echo "<tr><td>";
+						    echo "</td><td>";
+							echo $row['description'];
+							echo "</td><td>";
+							echo "<'img src'";
+							echo $row['picture'];
+							echo "'></td><td>";
+							echo $row['price'];
+							echo "</td></tr>";
+						}
+						<!--echo<<<TABLE 
 						<tr>
 							<td>{$vara[0]}</td>
 							<td>{$vara[1]}</td>
