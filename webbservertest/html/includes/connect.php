@@ -8,7 +8,7 @@ if(!$dhb){
 
 //echo "Ansluten till databasen";
 
-$sql = "SELECT * FROM products";
+/* $sql = "SELECT * FROM products";
 
 $result = $dhb->prepare($sql);
 $result->execute();
